@@ -18,10 +18,12 @@ style = []
 type = [] 
 lang_names = []
 
-languages.each do |lang, all|
-  all.each do |key, value|
-    value.each do |k, v|
-      
+languages.each do |key, value|
+  value.each do |language, all|
+    all.each do |k, v|
+      if !new_hash[language]
+        new_hash[language] = {}
+      end #end if
   
   
   end #do value.each 
