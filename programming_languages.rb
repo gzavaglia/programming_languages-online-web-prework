@@ -21,10 +21,10 @@ languages.each do |lang, all|
 end #end do lang.each
 #our new hash is hash = {lang name => {type => "type"}, {style => "style"}}
 i = 0
-while i<lang_names.size
-new_hash[lang_names[i]] = {
-:type => type [i].join, :style => style[i]} 
-i = i+1
-end 
+# while i<lang_names.size
+# new_hash[lang_names[i]] = {
+# :type => type [i].join, :style => style[i]} 
+# i = i+1
+# end 
 puts new_hash
 end #reformat_languages
