@@ -24,7 +24,9 @@ languages.each do |key, value|
       if !new_hash[language]
         new_hash[language] = {}
       end #end if
-  
+      if !new_hash[language][:style]
+        new_hash[language][:style] = []
+      end #end if
   
   end #do value.each 
   end #end all do 
