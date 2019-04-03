@@ -19,6 +19,7 @@ type = []
 lang_names = []
 
 languages.each do |key, value|
+  binding.pry
   value.each do |language, all|
     all.each do |k, v|
       if !new_hash[language]
@@ -27,7 +28,7 @@ languages.each do |key, value|
       if !new_hash[language][:style]
         new_hash[language][:style] = []
       end #end if
-  binding.pry 
+   
   end #do value.each 
   end #end all do 
  
