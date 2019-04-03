@@ -18,9 +18,10 @@ style = []
 type = [] 
 lang_names = []
 
-languages.each do |key, value|
-  binding.pry
-  value.each do |language, all|
+languages.each do |oo_or_functional, language_hash|
+  
+  language_hash.each do |language, all|
+    binding.pry
     all.each do |k, v|
       if !new_hash[language]
         new_hash[language] = {}
