@@ -21,11 +21,8 @@ lang_names = []
 languages.each do |lang, all|
   all.each do |key, value|
     value.each do |k, v|
-  new_hash[key] = value
-  type << value.values
-  binding.pry 
-  lang_names << key 
-  style << lang
+      
+  
   
   end #do value.each 
   end #end all do 
