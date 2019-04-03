@@ -20,19 +20,22 @@ lang_names = []
 
 languages.each do |oo_or_functional, language_hash|
   
-  language_hash.each do |language, all|
-    binding.pry
-    all.each do |k, v|
+  language_hash.each do |language, attribute_hash|
+  
+    attribute_hash.each do |type, value|
       if !new_hash[language]
         new_hash[language] = {}
       end #end if
       if !new_hash[language][:style]
         new_hash[language][:style] = []
       end #end if
-   
+      new_hash[language][:style] << oo_or_functional
+      if !new_hash[language][type]
+        new_hash[language][type] = value
+      end 
   end #do value.each 
   end #end all do 
  
 end #end do lang.each
-puts new_hash
+new_hash
 end #reformat_languages
