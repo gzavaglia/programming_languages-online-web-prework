@@ -26,7 +26,7 @@ languages.each do |lang, all|
   lang_names << key 
   style << lang
   end #end all do 
- 
+ languages[:oo].
 end #end do lang.each
 puts new_hash
 end #reformat_languages
