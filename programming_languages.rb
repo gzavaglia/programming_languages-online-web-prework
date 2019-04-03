@@ -1,3 +1,4 @@
+require 'pry'
 def reformat_languages (languages) 
 new_hash = {}
 style = []
@@ -10,6 +11,7 @@ languages.each do |lang, all|
   #key = language name 
   #value = type + actual type 
   type << value.values
+  binding.pry 
   lang_names << key 
   style << lang
   end #end all do 
