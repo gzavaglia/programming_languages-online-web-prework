@@ -27,7 +27,7 @@ languages.each do |key, value|
       if !new_hash[language][:style]
         new_hash[language][:style] = []
       end #end if
-      new_hash[language] << all
+      
   binding.pry 
   end #do value.each 
   end #end all do 
